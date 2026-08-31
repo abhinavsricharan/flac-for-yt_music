@@ -1,5 +1,7 @@
 # YouTube to FLAC Downloader
 
+![Banner](social_preview.jpg)
+
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Powered by yt-dlp](https://img.shields.io/badge/Powered_by-yt--dlp-red)
 ![License](https://img.shields.io/badge/License-MIT-green)
