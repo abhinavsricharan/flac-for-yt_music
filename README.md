@@ -1,6 +1,17 @@
 # YouTube to FLAC Downloader
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Powered by yt-dlp](https://img.shields.io/badge/Powered_by-yt--dlp-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 This script allows you to easily download audio from any YouTube video or YouTube Music link and convert it into a FLAC file, complete with embedded metadata (title, artist) and cover art.
+
+## Features
+
+*   **Highest Quality Audio Selection:** Automatically rips the absolute best audio stream available from the source.
+*   **Automatic Cover Art:** Fetches the YouTube thumbnail and natively embeds it into the FLAC file.
+*   **Smart Metadata:** Tags your files with the correct Title and Artist automatically based on the video information.
+*   **Playlist Support:** Feed it a playlist URL and watch it download an entire album sequentially.
 
 ## Why use this tool?
 
@@ -12,7 +23,7 @@ While YouTube streams audio using lossy formats (like Opus or AAC), downloading 
 
 ## Prerequisites
 
-Before using the script, you need to make sure your terminal is correctly set up.
+Before using the script, you need to make sure your terminal is correctly set up. You must have `ffmpeg` installed and accessible in your system's PATH.
 
 1. **Open a Terminal:** Open PowerShell or Command Prompt. 
 2. **Navigate to the folder:** Go to the folder where the script is located.
@@ -47,7 +58,7 @@ python main.py "https://music.youtube.com/watch?v=dQw4w9WgXcQ"
 ```
 
 **Playlists:**
-The script also natively supports downloading entire playlists! Just provide the playlist URL.
+The script also natively supports downloading entire playlists. Just provide the playlist URL.
 ```bash
 python main.py "https://www.youtube.com/playlist?list=PL..."
 ```
@@ -57,3 +68,15 @@ python main.py "https://www.youtube.com/playlist?list=PL..."
 
 - **`ffprobe and ffmpeg not found` error:** This means your terminal cannot find the `ffmpeg` installation. Close your terminal entirely and open a new one to refresh your system's PATH variables.
 - **Script fails to download:** Sometimes YouTube updates their systems which breaks downloaders. If you get extraction errors, you can update the underlying downloader by running: `pip install --upgrade yt-dlp` while your virtual environment is active.
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
+
+## Disclaimer
+
+This tool is provided for personal, educational, and fair-use purposes only. Users are responsible for ensuring their use of this software complies with YouTube's Terms of Service and their local copyright laws. The developers of this tool are not responsible for any misuse.
+
+## License
+
+This project is licensed under the MIT License.
